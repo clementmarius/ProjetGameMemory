@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400&display=swap" rel="stylesheet">
+    <title>Sign-up</title>
+</head>
+
+<body>
+    <header>
+        <div class="title-ENI">
+            <h1>ENI - MEMORY - Accueil</h1>
+        </div>
+
+        <div class="welcome-list">
+            <nav aria-label="Breadcrumb" class="breadcrumb">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Sign-up</a></li>
+                    <li><a href="log-in.html">Log-in</a></li>
+                    <li><a href="user-profil.html">Profil</a></li>
+                    <li><a href="play.html">Play</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="contenu">
+        <div class="text-register">
+            <h2 class="register-rules">Please register.</h2>
+        </div>
+
+        <form action="" id="form">
+
+
+            <div class="info-content">
+                <div class="inscription-content">
+                    <p class="info_inscription">User name</p>
+                </div>
+                <div class="index-group">
+                    <div>
+
+                        <div class="CheckOrError">
+                            <input class="saisie-info" type="text" id="username" name="username"
+                                placeholder="3 characters minimum" />
+                            <img id="errorName" class="error" src="img/error.svg" alt="error">
+                        </div>
+
+                        <div class="error"></div>
+                    </div>
+                </div>
+            </div>
+            <p class="gray" id="user-name-error"></p>
+
+            <div class="info-content">
+                <div class="inscription-content">
+                    <p class="info_inscription">Enter your email</p>
+                </div>
+                <div class="index-group">
+                    <div>
+
+                        <div class="CheckOrError">
+                            <input class="saisie-info" type="text" id="email" name="email"
+                                placeholder="enter your email" />
+                            <img id="errorEmail" class="error" src="img/error.svg" alt="error">
+                        </div>
+
+                        <div class="error"></div>
+                    </div>
+                </div>
+            </div>
+            <p class="gray" id="email-error"></p>
+
+
+            <div class="info-content">
+                <div class="inscription-content">
+                    <p class="info_inscription">Your password</p>
+                </div>
+                <div class="index-group">
+                    <div>
+
+                        <div class="CheckOrError">
+                            <input class="saisie-info" type="password" id="password" name="password"
+                                placeholder="enter your password" />
+                            <img id="errorPassword" class="error" src="img/error.svg" alt="error">
+                        </div>
+                        <div class="error"></div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <p class="gray" id="password-error">At least one symbol, one number, and at least 6 characters.</p>
+
+                <div class="strenght_password">
+
+                    <div class="weak hidden">
+                        <div id="pw_easy"></div>
+                        <p id="text_pw_easy">Password sensitive</p>
+                    </div>
+                    <div class="medium hidden">
+                        <div id="pw_medium"></div>
+                        <p id="text_pw_medium">Average password</p>
+                    </div>
+                    <div class="strong hidden">
+                        <div id="pw_strong"></div>
+                        <p id="text_pw_strong">Password strong </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="info-content">
+                <div class="inscription-content">
+                    <p class="info_inscription">Confirm Your password</p>
+                </div>
+                <div class="index-group">
+                    <div>
+
+                        <div class="CheckOrError">
+                            <input class="saisie-info" type="password" id="password2" name="password2"
+                                placeholder="Confirm your password" />
+                            <img id="errorConfirmPassword" class="error" src="img/error.svg" alt="error">
+                            <div class="error"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <p class="gray" id="text-error"></p>
+
+            <div class="btn-2nd-page">
+                <div class="btn-form">
+                    <button class="class-btn-log" id="pressCreation" type="submit"><strong>Account
+                            Creation</strong></button>
+
+                    <button class="class-btn-log" type="reset"><strong>Cancel</strong></button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="jsFiles/register.js"></script>
+    <script src="jsFiles/local-storage.js"></script>
+</body>
+
+</html>
